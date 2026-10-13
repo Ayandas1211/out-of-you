@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Bento Grid Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide or FontAwesome icons if needed, using standard SVG icons for lightweight standalone usage -->
+</head>
+<body>
+
+  <!-- Background Watermark / Silhouette Layer -->
+  <div class="bg-watermark"></div>
+
+  <div class="container">
+    
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-profile">
+        <div class="avatar-ring">
+          <img src="WhatsApp Image 2026-10-12 at 7.43.59 PM.jpeg" alt="Profile Avatar" class="nav-avatar" onerror="this.src='https://via.placeholder.com/40'">
+        </div>
+        <div class="nav-user-info">
+          <span class="user-name">AYAN DAS</span>
+          <span class="user-sub">ANIME / DEV</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#about" class="nav-item active">About</a>
+        <a href="#projects" class="nav-item">Works</a>
+      </nav>
+    </header>
+
+    <!-- Main Bento Grid Section -->
+    <main class="bento-grid">
+
+      <!-- 1. Hero Card (Large Blue Card with Character Pop-out) -->
+      <section class="card hero-card">
+      <div class="hero-slides">
+        
+        <!-- Slide 1 (আপনার আসল প্রোফাইল ও ছবি) -->
+        <div class="hero-slide active">
+          <div class="hero-content">
+            <span class="japanese-tag">アヤン・ダス</span>
+            <h1 class="hero-title">Hi, I'm <span class="highlight-name">AYAN DAS</span></h1>
+            <p class="hero-desc">
+              Welcome to my profile! I'm glad you visited. Here, you will find interesting information.
+            </p>
+          </div>
+          <div class="hero-character-wrap">
+            <img src="InShot_20261012_194639716.png" alt="Anime Character" class="hero-character">
+          </div>
+        </div>
+
+        <!-- Slide 2 (ভ্যারিয়েন্ট / ২য় স্লাইড) -->
+        <div class="hero-slide">
+          <div class="hero-content">
+            <span class="japanese-tag">ウェブ開発者</span>
+            <h1 class="hero-title">Front-End <span class="highlight-name">Developer</span></h1>
+            <p class="hero-desc">
+              Crafting responsive web designs, interactive UI components, and modern clean layouts.
+            </p>
+          </div>
+          <div class="hero-character-wrap">
+            <img src="InShot_20261013_100506076.png" alt="Anime Character" class="hero-character char-1">
+          </div>
+        </div>
+
+        <!-- Slide 3 (আর্ট / ৩য় স্লাইড) -->
+        <div class="hero-slide">
+          <div class="hero-content">
+            <span class="japanese-tag">クリエイティブ</span>
+            <h1 class="hero-title">Anime <span class="highlight-name">Aesthetics</span></h1>
+            <p class="hero-desc">
+              Blending anime style aesthetics with code, motion, and digital experiences.
+            </p>
+          </div>
+          <div class="hero-character-wrap wrap2">
+            <img src="InShot_20261013_104633717.png" alt="Anime Character" class="hero-character char-2">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ৩টি ইন্ডিকেটর দাগ -->
+      <div class="carousel-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+      </div>
+    </section>
+
+      <!-- 2. About Me Card -->
+      <section class="card about-card">
+        <div class="about-header">
+          <h2>About Me</h2>
+          <span class="sub-japanese">について</span>
+        </div>
+        <div class="about-body">
+          <p class="about-text">
+            Creative enthusiast & developer. Exploring the boundaries of digital world, code, anime art, and interactive experiences. Crafting beautiful designs with passion.
+          </p>
+          <div class="about-chibi">
+            <img src="InShot_20261012_195905824.png" alt="Chibi Avatar" onerror="this.src='https://via.placeholder.com/80?text=Chibi'">
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Character Variant Card 1 -->
+      <section class="card variant-card">
+        <div class="variant-img-wrap">
+          <img src="InShot_20261012_200336739.png" alt="Style 1" onerror="this.src='https://via.placeholder.com/150x220?text=Style+1'">
+        </div>
+        <span class="variant-label">Urban Ver</span>
+      </section>
+
+      <!-- 4. Character Variant Card 2 -->
+      <section class="card variant-card">
+        <div class="variant-img-wrap">
+          <img src="InShot_20261012_201357159.jpg.jpeg" alt="Style 2" onerror="this.src='https://via.placeholder.com/150x220?text=Style+2'">
+        </div>
+        <span class="variant-label">Hoodie Ver</span>
+      </section>
+
+      <!-- 5. Date / Birthday / Stat Widget -->
+      <section class="card date-card">
+        <div class="date-number">12</div>
+        <div class="date-details">
+          <span class="month-name">november</span>
+          <span class="kanji-symbol">♏</span>
+        </div>
+        <div class="date-icon">🎂</div>
+      </section>
+
+      <!-- 6. Digital Clock / Time Widget -->
+      <section class="card time-card">
+        <div class="current-time" id="digital-clock">08:30 <span class="ampm">PM</span></div>
+        <div class="current-day" id="calendar-day">Monday</div>
+        <div class="current-date-year" id="calendar-date">November 2026</div>
+      </section>
+
+      <!-- 7. Small Mascot / Smool Card -->
+      <section class="card smool-card">
+        <div class="smool-img-wrap">
+          <img src="InShot_20261012_202331298.png" alt="Smool Ver" onerror="this.src='https://via.placeholder.com/100x100?text=Mascot'">
+        </div>
+        <span class="smool-label">Smool Ver</span>
+      </section>
+
+      <!-- 8. View More / Action Card -->
+      <a href="#more" class="card view-more-card">
+        <span class="view-more-text">View<br>More</span>
+        <div class="arrow-btn">➔</div>
+      </a>
+
+      <!-- 9. Bottom Profile Friends & Action Bar -->
+      <section class="card footer-bar-left">
+        <div class="avatar-group">
+          <span class="dot-avatar online"></span>
+          <span class="dot-avatar"></span>
+          <span class="dot-avatar online"></span>
+          <span class="dot-avatar"></span>
+        </div>
+        <div class="quick-icons">
+          <button title="Chat">💬</button>
+          <button title="Call">📞</button>
+          <button title="Search">🔍</button>
+        </div>
+      </section>
+
+      <!-- 10. Bottom Credits Bar -->
+      <section class="card footer-bar-right">
+        <span class="credit-text">Designed with Anime Bento Theme</span>
+        <div class="dots-menu">•••</div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
